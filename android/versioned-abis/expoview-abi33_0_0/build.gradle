@@ -71,7 +71,6 @@ dependencies {
   testImplementation 'junit:junit:4.12'
 
   implementation project(":expoview")
-  api 'host.exp:reactandroid-abi33_0_0:1.0.0'
 
   // WHEN_DISTRIBUTING_REMOVE_TO_HERE
 
@@ -172,4 +171,10 @@ dependencies {
   // expo-payments-stripe
   implementation 'com.stripe:stripe-android:8.1.0'
   implementation 'com.github.tipsi:CreditCardEntry:1.5.0'
+
+  // unversioned modules
+  implementation project(':expo-gl-cpp')
+  implementation project(':expo-print')
+  implementation project(':unimodules-core')
+  implementation project(':unimodules-task-manager-interface')
 }
